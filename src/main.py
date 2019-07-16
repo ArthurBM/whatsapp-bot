@@ -35,7 +35,6 @@ class WhatsappBot:
             self.status = 'online'
         else:
             self.status = None
-        
         if status:
             print("{} is {}".format(name, 'Online' if self.status else 'Offline'))
 
@@ -161,6 +160,8 @@ def main():
                 'kiss': '😚',
                 'laugh': '😂',
                 'heart': '❤️',
+                'fullmoon': '🌝',
+                'newmoon': '🌚'
             }
             print(
                 """
@@ -170,13 +171,17 @@ def main():
                 type kiss for {}\n
                 type laugh for {}\n
                 type heart for {}\n
+                type fullmoon for {}\n
+                type newmoon for {}\n
                 """.format(
                     emojis['cake'],
                     emojis['partyface'],
                     emojis['partypooper'],
                     emojis['kiss'],
                     emojis['laugh'],
-                    emojis['heart']
+                    emojis['heart'],
+                    emojis['fullmoon'],
+                    emojis['newmoon']
                 )
             )
             emoji_key = input("Emoji to use? »\t")
